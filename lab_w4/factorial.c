@@ -4,7 +4,7 @@ int factorial(int N)
         return 1;
     }
     else{
-        return factorial(N-1)*N
+        return factorial(N-1)*N;
     }
     
 }
