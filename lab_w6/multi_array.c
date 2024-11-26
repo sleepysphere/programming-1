@@ -42,6 +42,19 @@ int main()
     int indexes[] = { 1, 0, 1 };
     int out = get_data(array, indexes, 3);
 
+    for(int i=0; i <3; i++)
+    {
+        for (int j=0; j<2;j++)
+        {
+            for(int k=0; k<2; k++)
+            {
+                int indexes[]={i,j,k};
+                int out = get_data(array,indexes,3);
+                printf("\narray[%d][%d][%d] -> %d",i,j,k,i*4+j*2+k*1);
+            }
+        }
+    }
+
     return 0;
 }
 
